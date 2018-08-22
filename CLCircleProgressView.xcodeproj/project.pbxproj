@@ -15,6 +15,7 @@
 		63CCC547212D75A1004DEA17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CCC546212D75A1004DEA17 /* main.m */; };
 		63CCC551212D75A1004DEA17 /* CLCircleProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CCC550212D75A1004DEA17 /* CLCircleProgressViewTests.m */; };
 		63CCC55C212D75A2004DEA17 /* CLCircleProgressViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CCC55B212D75A2004DEA17 /* CLCircleProgressViewUITests.m */; };
+		63CCC56C212D75B2004DEA17 /* CLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CCC56B212D75B2004DEA17 /* CLProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		63CCC557212D75A1004DEA17 /* CLCircleProgressViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLCircleProgressViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CCC55B212D75A2004DEA17 /* CLCircleProgressViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCircleProgressViewUITests.m; sourceTree = "<group>"; };
 		63CCC55D212D75A2004DEA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CCC56A212D75B2004DEA17 /* CLProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLProgressView.h; sourceTree = "<group>"; };
+		63CCC56B212D75B2004DEA17 /* CLProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		63CCC536212D759F004DEA17 /* CLCircleProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				63CCC569212D75B2004DEA17 /* CLProgressView */,
 				63CCC537212D759F004DEA17 /* AppDelegate.h */,
 				63CCC538212D759F004DEA17 /* AppDelegate.m */,
 				63CCC53A212D759F004DEA17 /* ViewController.h */,
@@ -130,6 +134,15 @@
 				63CCC55D212D75A2004DEA17 /* Info.plist */,
 			);
 			path = CLCircleProgressViewUITests;
+			sourceTree = "<group>";
+		};
+		63CCC569212D75B2004DEA17 /* CLProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				63CCC56A212D75B2004DEA17 /* CLProgressView.h */,
+				63CCC56B212D75B2004DEA17 /* CLProgressView.m */,
+			);
+			path = CLProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +277,7 @@
 			files = (
 				63CCC53C212D759F004DEA17 /* ViewController.m in Sources */,
 				63CCC547212D75A1004DEA17 /* main.m in Sources */,
+				63CCC56C212D75B2004DEA17 /* CLProgressView.m in Sources */,
 				63CCC539212D759F004DEA17 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UX43PF86LH;
 				INFOPLIST_FILE = CLCircleProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UX43PF86LH;
 				INFOPLIST_FILE = CLCircleProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
