@@ -80,52 +80,67 @@
 }
 
 #pragma mark - Setter
-- (void)setTrackColor:(UIColor *)trackColor
-{
-    _trackColor = trackColor;
-    self.backLayer.strokeColor = trackColor.CGColor;
-}
-
-- (void)setTrackWidth:(CGFloat)trackWidth
-{
-    _trackWidth = trackWidth;
-    self.backLayer.lineWidth = trackWidth;
-}
-
+// 设置滚动条数值
 - (void)setProgressValue:(CGFloat)progressValue
 {
     _progressValue = progressValue;
     self.frontLayer.strokeEnd = progressValue;
 }
 
+// 设置轨道颜色
+- (void)setTrackColor:(UIColor *)trackColor
+{
+    _trackColor = trackColor;
+    self.backLayer.strokeColor = trackColor.CGColor;
+}
+
+// 设置轨道的宽度
+- (void)setTrackWidth:(CGFloat)trackWidth
+{
+    _trackWidth = trackWidth;
+    self.backLayer.lineWidth = trackWidth;
+}
+
+// 设置滚动条数值
 - (void)setCircleColor:(UIColor *)circleColor
 {
     _circleColor = circleColor;
     self.frontLayer.strokeColor = circleColor.CGColor;
 }
 
+// 设置滚动条线宽
 - (void)setCircleWidth:(CGFloat)circleWidth
 {
     _circleWidth = circleWidth;
     self.frontLayer.lineWidth = circleWidth;
 }
 
+// 设置内容文字
 - (void)setContentText:(NSString *)contentText
 {
     _contentText = contentText;
     self.textLabel.text = contentText;
 }
 
+// 设置内容颜色
 - (void)setContentColor:(UIColor *)contentColor
 {
     _contentColor = contentColor;
     self.textLabel.textColor = contentColor;
 }
 
+// 设置字体
 - (void)setContentFont:(UIFont *)contentFont
 {
     _contentFont = contentFont;
     self.textLabel.font = contentFont;
+}
+
+// 显示或隐藏文本框
+- (void)setIsShowContent:(BOOL)isShowContent
+{
+    _isShowContent = isShowContent;
+    self.textLabel.hidden = !isShowContent;
 }
 
 @end
