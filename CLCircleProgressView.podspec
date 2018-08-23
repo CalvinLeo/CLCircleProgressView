@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "CLCircleProgressView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "圆形进度条"
   s.description  = "一个简单的圆形进度条"
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ClCircleProgressView/CLProgressView", "ClCircleProgressView/CLProgressView/**/*.{h,m}"
+  s.source_files  = "ClCircleProgressView/CLProgressView", "ClCircleProgressView/CLProgressView/CLProgressView.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
