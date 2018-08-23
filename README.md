@@ -6,6 +6,12 @@ demo是简单的环形进度条表示热量的摄入
 
 ![效果图](https://github.com/CalvinLeo/imageSource/blob/master/progressView.gif)
 
+## CocoaPods
+
+1. Add `pod 'CLCircleProgressView'` to your Podfile.
+2. Run `pod install` or `pod update`.
+3. Import \<CLCircleProgressView/CLProgressView.h\>.
+
 ## 使用方式
 
 
