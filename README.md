@@ -1,7 +1,6 @@
 # CLCircleProgressView
 
 ## 环形进度条
-=========
 
 demo是简单的环形进度条表示热量的摄入
 
@@ -9,9 +8,8 @@ demo是简单的环形进度条表示热量的摄入
 
 ## 使用方式
 
-=========
 
-```
+```objc
 #import "ViewController.h"
 
 #import "CLProgressView.h"
